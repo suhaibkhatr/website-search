@@ -147,9 +147,6 @@ All models:
 ## Index Reliability
 - **Queued indexing**: `SCOUT_QUEUE=true` + `queue:work`
 - **After commit**: `$afterCommit = true` on models
-- **Soft deletes** *(optional)*:
-  - Set `'soft_delete' => true` in `config/scout.php`
-  - Add `SoftDeletes` to models
 - **Bulk re-import** (safety net):
   ```bash
   ./vendor/bin/sail artisan search:rebuild
